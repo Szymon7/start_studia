@@ -5,16 +5,21 @@
 #include <ctime>
 
 int Game::guess() {
-    std::srand(std::time(nullptr));
-    int randomNum = rand() % 101;
     int input;
+    int trials = 0;
+    int highestNumber;
 
     std::cout << "Hello in guessing game!\n"
-                 "Guess number between 1 and 100\n";
+                 "Pick highest number to guess: \n";
+    std::cin >> highestNumber;
+
+    std::srand(std::time(nullptr));
+    int randomNum = (rand() % highestNumber) + 1;
 
     while (input != randomNum) {
         std::cout << "\nWrite number: ";
         std::cin >> input;
+        trials++;
 
         if (input > randomNum) {
             std::cout << "\nTry lower\n";
@@ -26,7 +31,8 @@ int Game::guess() {
     }
 
     std::cout << "You win!\n";
-    std::cout << "\n=============================\n";
+    std::cout << "Number of trials: " << trials;
+    std::cout << "\n\n=============================\n";
 
     return 0;
 }
