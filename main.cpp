@@ -6,6 +6,7 @@
 #include "Simple/Calculator.h"
 #include "Simple/Conversion.h"
 #include "Simple/Game.h"
+#include "Simple/Meteorologist.h"
 
 int findHighestInt() {
     int maxValue;
@@ -62,6 +63,7 @@ int main() {
         std::cout << "3. Meters conversion to units table\n";
         std::cout << "4. Calculator\n";
         std::cout << "5. Guessing game\n";
+        std::cout << "6. Calculate meteorologist day\n";
         std::cout << "0. Exit\n";
 
         int selectedProgram;
@@ -92,6 +94,9 @@ int main() {
                 continue;
             case 5:
                 Game::guess();
+                continue;
+            case 6:
+                Meteorologist::calculateDay();
                 continue;
             case 0:
                 return 0;
