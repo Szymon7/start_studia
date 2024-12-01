@@ -11,4 +11,6 @@ add_executable(Projects main.cpp
         Simple/Game.h
         Simple/Game.cpp
         Simple/Meteorologist.cpp
-        Simple/Meteorologist.h)
+        Simple/Meteorologist.h
+        Simple/Interest.cpp
+        Simple/Interest.h)

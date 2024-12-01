@@ -6,6 +6,7 @@
 #include "Simple/Calculator.h"
 #include "Simple/Conversion.h"
 #include "Simple/Game.h"
+#include "Simple/Interest.h"
 #include "Simple/Meteorologist.h"
 
 int findHighestInt() {
@@ -64,6 +65,7 @@ int main() {
         std::cout << "4. Calculator\n";
         std::cout << "5. Guessing game\n";
         std::cout << "6. Calculate meteorologist day\n";
+        std::cout << "7. Test interest\n";
         std::cout << "0. Exit\n";
 
         int selectedProgram;
@@ -98,10 +100,11 @@ int main() {
             case 6:
                 Meteorologist::calculateDay();
                 continue;
-            case 0:
-                return 0;
-            default:
+            case 7:
+                Interest::tests();
                 continue;
+            default:
+                return 0;
         }
     }
 
