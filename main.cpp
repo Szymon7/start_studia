@@ -9,6 +9,7 @@
 #include "Simple/Game.h"
 #include "Simple/Interest.h"
 #include "Simple/Meteorologist.h"
+#include "Simple/QuadraticFunction.h"
 
 int findHighestInt() {
     int maxValue;
@@ -68,6 +69,7 @@ int main() {
         std::cout << "6. Calculate meteorologist day\n";
         std::cout << "7. Test interest\n";
         std::cout << "8. Figure fields\n";
+        std::cout << "9. Calculate quadratic function\n";
         std::cout << "0. Exit\n";
 
         int selectedProgram;
@@ -107,6 +109,9 @@ int main() {
                 continue;
             case 8:
                 FigureFields::menu();
+                continue;
+            case 9:
+                QuadraticFunction::run();
                 continue;
             default:
                 return 0;
