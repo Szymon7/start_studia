@@ -5,6 +5,7 @@
 
 #include "Simple/Calculator.h"
 #include "Simple/Conversion.h"
+#include "Simple/FigureFields.h"
 #include "Simple/Game.h"
 #include "Simple/Interest.h"
 #include "Simple/Meteorologist.h"
@@ -66,6 +67,7 @@ int main() {
         std::cout << "5. Guessing game\n";
         std::cout << "6. Calculate meteorologist day\n";
         std::cout << "7. Test interest\n";
+        std::cout << "8. Figure fields\n";
         std::cout << "0. Exit\n";
 
         int selectedProgram;
@@ -102,6 +104,9 @@ int main() {
                 continue;
             case 7:
                 Interest::tests();
+                continue;
+            case 8:
+                FigureFields::menu();
                 continue;
             default:
                 return 0;

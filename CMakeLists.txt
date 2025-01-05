@@ -13,4 +13,6 @@ add_executable(Projects main.cpp
         Simple/Meteorologist.cpp
         Simple/Meteorologist.h
         Simple/Interest.cpp
-        Simple/Interest.h)
+        Simple/Interest.h
+        Simple/FigureFields.cpp
+        Simple/FigureFields.h)
