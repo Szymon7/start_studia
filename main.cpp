@@ -3,6 +3,7 @@
 #include <limits>
 #include <string>
 
+#include "Simple/Balance.h"
 #include "Simple/Calculator.h"
 #include "Simple/Conversion.h"
 #include "Simple/FigureFields.h"
@@ -70,6 +71,7 @@ int main() {
         std::cout << "7. Test interest\n";
         std::cout << "8. Figure fields\n";
         std::cout << "9. Calculate quadratic function\n";
+        std::cout << "10. Calculate year balance\n";
         std::cout << "0. Exit\n";
 
         int selectedProgram;
@@ -113,10 +115,14 @@ int main() {
             case 9:
                 QuadraticFunction::run();
                 continue;
-            default:
+            case 10:
+                Balance::run();
+                continue;
+            case 0:
                 return 0;
+            default:
+                std::cout << "Invalid option. Please try again.\n";
+                break;
         }
     }
-
-    return 0;
 }

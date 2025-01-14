@@ -108,9 +108,9 @@ int FigureFields::menu() {
                 trapezeField();
                 continue;
             default:
+                std::cout << "\n\n=============================\n";
                 return 0;
         }
 
-        std::cout << "\n\n=============================\n";
     }
 }

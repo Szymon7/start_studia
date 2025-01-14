@@ -17,4 +17,6 @@ add_executable(Projects main.cpp
         Simple/FigureFields.cpp
         Simple/FigureFields.h
         Simple/QuadraticFunction.cpp
-        Simple/QuadraticFunction.h)
+        Simple/QuadraticFunction.h
+        Simple/Balance.cpp
+        Simple/Balance.h)
