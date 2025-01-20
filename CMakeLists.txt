@@ -19,4 +19,6 @@ add_executable(Projects main.cpp
         Simple/QuadraticFunction.cpp
         Simple/QuadraticFunction.h
         Simple/Balance.cpp
-        Simple/Balance.h)
+        Simple/Balance.h
+        Simple/Sentence.cpp
+        Simple/Sentence.h)

@@ -11,6 +11,7 @@
 #include "Simple/Interest.h"
 #include "Simple/Meteorologist.h"
 #include "Simple/QuadraticFunction.h"
+#include "Simple/Sentence.h"
 
 int findHighestInt() {
     int maxValue;
@@ -72,6 +73,7 @@ int main() {
         std::cout << "8. Figure fields\n";
         std::cout << "9. Calculate quadratic function\n";
         std::cout << "10. Calculate year balance\n";
+        std::cout << "11. Sentence operations\n";
         std::cout << "0. Exit\n";
 
         int selectedProgram;
@@ -117,6 +119,9 @@ int main() {
                 continue;
             case 10:
                 Balance::run();
+                continue;
+            case 11:
+                Sentence::run();
                 continue;
             case 0:
                 return 0;
