@@ -21,4 +21,6 @@ add_executable(Projects main.cpp
         Simple/Balance.cpp
         Simple/Balance.h
         Simple/Sentence.cpp
-        Simple/Sentence.h)
+        Simple/Sentence.h
+        Simple/Indicators.cpp
+        Simple/Indicators.h)

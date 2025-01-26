@@ -8,6 +8,7 @@
 #include "Simple/Conversion.h"
 #include "Simple/FigureFields.h"
 #include "Simple/Game.h"
+#include "Simple/Indicators.h"
 #include "Simple/Interest.h"
 #include "Simple/Meteorologist.h"
 #include "Simple/QuadraticFunction.h"
@@ -74,6 +75,7 @@ int main() {
         std::cout << "9. Calculate quadratic function\n";
         std::cout << "10. Calculate year balance\n";
         std::cout << "11. Sentence operations\n";
+        std::cout << "12. Sentence operations using indicators\n";
         std::cout << "0. Exit\n";
 
         int selectedProgram;
@@ -122,6 +124,9 @@ int main() {
                 continue;
             case 11:
                 Sentence::run();
+                continue;
+            case 12:
+                Indicators::run();
                 continue;
             case 0:
                 return 0;
